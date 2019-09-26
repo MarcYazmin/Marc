@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class AlgorismeBeques {
+    public static void main(String[] args) {
+        int edat, germans, ingressos, algorisme;
+        Scanner lector = new Scanner(System.in);
+        System.out.println("¿Quina edat tens?");
+        edat = lector.nextInt();
+        System.out.println("¿Quants germans tens?");
+        germans = lector.nextInt();
+        System.out.println("¿Quins ingresos mensuals te la teva familia?");
+        ingressos = lector.nextInt();
+        algorisme = (((germans*5700)+500-ingressos)/((germans*5700)+500))*(4000);//tiene que salir "3225"
+        if(edat>=18){
+            System.out.println(algorisme);
+        }
+        
+    }
+}
+// CADA VEZ QUE HAGO LA MALDITA OPERACION ME SALE 0!!!
